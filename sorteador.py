@@ -1,3 +1,7 @@
+print("- - - Adivinhe o número - - -")
+print("Regras:\n - O número sorteado está entre 0 a 100 e é um número par.\n - Você tem quatro chances e 200 de vida.\n - A cada erro você perderá o equivalente à diferença ao número sorteado.\n ")
+print("\n")
+
 import random
 tent = 4
 vida = 200
