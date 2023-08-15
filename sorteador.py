@@ -10,12 +10,11 @@ resto = 0
 while resto == 0:
     n_sorteio = random.randrange(0, 100)
     resto = n_sorteio % 2
-    print(n_sorteio, resto)
 
 while tent > 0 and vida > 0:
     number = int(input("Digite o número: "))
     if number == n_sorteio:
-        print("Você acertou!")
+        print("Parabéns! Você acertou o número!")
         break
     else:
         print("Você errou")
@@ -24,5 +23,12 @@ while tent > 0 and vida > 0:
         vida = vida - abs(prox_vida)
         print(vida)
         continue
+
+while tent == 0 or vida == 0:
+    print("Suas chances ou vida acabaram, boa sorte na próxima vez!")
+    break
+
+
+
 
 
